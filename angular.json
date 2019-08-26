@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "my-app"
+  "defaultProject": "my-app",
+  "cli": {
+    "packageManager": "yarn"
+  }
 }
