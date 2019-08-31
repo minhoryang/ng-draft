@@ -4,16 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 // External Modules:
 // Internal Modules/Components out of this directory:
 // Internal Modules/Components in this directory:
-import { AppComponent } from './app.component';
+import { DailyViewComponent } from './views/daily/daily.view.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent, pathMatch: 'full' },
+  { path: 'daily', component: DailyViewComponent, },
 ];
 
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class CalendarRoutingModule { }
